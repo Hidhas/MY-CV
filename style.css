@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+/* home page styles */
+
+.homepage{
+    background-color:#7743DB;
+    background-image: linear-gradient(to bottom right,#3B3486, #7743DB, #8D72E1,#B9E0FF);
+    height: 100vh;
+}
+
+.name{
+    font-size: 1.2rem;
+    color: white;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.name span{
+    color: #B9E0FF;
+}
+
+
+nav{
+    display: flex;
+    padding: 10px 20px 20px 20px ;
+    min-height: 15vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+}
+
+ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 35%;
+
+}
+
+li{
+    list-style: none;
+    margin: 0px 15px 0px 15px;
+   
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+ul li a:hover{
+    color: #2D033B;
+    transition: 0.7s;
+}
+
+.btn{
+    width: 50%;
+}
+.contact{
+    float: right;
+    height: 100%;
+    width: 25%;
+    padding: 15px 20px 15px 20px;
+    background-color: #C539B4;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.contact:hover{
+    border: 1px solid #2D033B;
+    background-color:#8D72E1 ;
+    transition: 0.6s;
+    color:#2D033B ;
+    cursor: pointer;
+}
+.contact a{
+    color: white;
+}
+.contact a:hover{
+    color: #2D033B;
+}
+
+.profile{
+    display: inline-block;
+    padding: 30% 15%;
+    color: white;
+    height: 70%;
+    font-family: 'Poppins', sans-serif;
+}
+.profile h4{
+    font-size: 1.5rem;
+}
+.profile h1{
+    font-size: 4rem;
+    line-height: 100px;
+}
+
+.bgcolor{
+    background-image: linear-gradient(to bottom right,#3B3486, #7743DB, #8D72E1,#B9E0FF);
+}
+
+.arrow{
+    height: 30px;
+    width: 40px;
+    display: none;
+    
+}
+
+.line1, .line2, .line3{
+    height:5px ;
+    width: 100%;
+    background-color: #2D033B;
+    margin:2px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+/* about me page  styles */
+
+.aboutme{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.aboutme img{
+    margin: 10% 20%;
+    height: 70vh;
+    width: 55%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #2D033B;
+}
+.aboutme-content{
+    height: 100vh;
+    display: inline-block;
+    padding: 30% 30%;
+    
+}
+.aboutme-content h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    
+}
+
+/* Skills page design */
+
+.Skills{
+    min-height: 100vh;
+    background-color: #8D72E1;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    padding-left: 15%;
+    justify-content: space-between;
+    
+    
+}
+#skills{
+    background-color: #8D72E1;
+}
+
+
+.Skills img{
+    height: 30%;
+    width: 20%;
+    
+}
+
+
+.Skills h4{
+    padding-left: 2%;
+    padding-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.divname{
+    color: white;
+    padding: 2% 15%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* contact me page design */
+
+.message{
+    min-height: 50vh;
+    background-color: #432C7A;
+    padding: 10% 15%;
+    color: white;
+}
+.mailform{
+   margin: 20px 0px;
+
+}
+form input{
+    margin: 10px 0px;
+    height: 40px;
+    width: 60%;
+    font-size: 0.9rem;
+    background-color: #432C7A;
+    color: white;
+    border: none;
+}
+form textarea{
+    width: 60%;
+    font-size: 0.9rem;
+    background-color: #432C7A;
+    color: white;
+}
+
+form input:hover{
+    border-bottom: 2px solid #8D72E1;
+    
+}
+#button{
+    height: 40px;
+    width: 15%;
+    border: none;
+    background-color: #C539B4;
+    color: white;
+}
+
+#button:hover{
+    border: 1px solid #C539B4;
+    background-color: #432C7A;
+    color: #C539B4;
+    cursor: pointer;
+
+}
+
+#contactme{
+    height: 20vh;
+    background-color: #3F3B6C;
+    display: inline-flex;
+    width: 100%;
+    padding: 2% 39%;
+    
+    
+    
+}
+
+footer img{
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px 0px 15px;
+   
+}
+
+footer p{
+    padding: 0% 0% 2% 40%;
+    color: white;
+    font-size: .9rem;
+    background-color: #3F3B6C;
+    
+}
+
+@media screen and (max-width:1098px) {
+
+    ul{
+        position: fixed;
+        top: 15vh;
+        display: block;
+        height: 90vh;
+        width: 100%;
+        font-size: 4rem;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        background-color: #2D033B;
+        padding-left: 0%;
+        transform: translateX(100%);
+        transition: transform 0.6s;
+
+    }
+
+    .name{
+        font-size: 1.2rem;
+        color: white;
+        width: 50%;
+        font-family: 'Poppins', sans-serif;
+       
+    }
+
+    ul li a:hover{
+        color: #4f0369;
+        transition: 0.7s;
+    }
+    
+
+    .btn{
+        width: 50%;
+    }
+    .contact{
+        width: 30%;
+    }
+
+    .arrow{
+        display: block;
+      }
+
+      .profile{
+        display: inline-block;
+        padding: 40% 15%;
+        color: white;
+        height: 70%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
+
+@media screen and (max-width:745px) {
+    .name{
+        font-size: 1.2rem;
+        color: white;
+        width: 70%;
+        font-family: 'Poppins', sans-serif;
+       
+    }
+    .btn{
+        width: 50%;
+    }
+
+    .contact{
+        width: 60%;
+    }
+
+    .aboutme-content{
+        height: 100vh;
+        display: inline-block;
+        padding: 30% 10%;
+        
+    }
+
+    .aboutme{
+        min-height: 100vh;
+        
+    }
+    .aboutme img{
+        margin:30% 20%;
+        height: 50vh;
+        width: 55%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px #2D033B;
+    }
+    .Skills img{
+        height: 60%;
+        width: 40%;
+        
+    }
+    
+    .Skills{
+        min-height: 100vh;
+        background-color: #8D72E1;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        align-items: center;
+        padding-left: 15%;
+        justify-content: space-between;
+        
+        
+    }
+    form input{
+        margin: 15px 0px;
+        height: 40px;
+        width: 90%;
+        font-size: 0.9rem;
+        background-color: #432C7A;
+        color: white;
+        border: none;
+    }
+    form textarea{
+        width: 89%;
+        font-size: 0.9rem;
+        background-color: #432C7A;
+        color: white;
+    }
+    form input:hover{
+        border-bottom: 2px solid #8D72E1;
+        
+    }
+    #button{
+        height: 40px;
+        width: 40%;
+        border: none;
+        background-color: #C539B4;
+        color: white;
+    }
+    #contactme{
+        height: 20vh;
+        background-color: #3F3B6C;
+        display: inline-flex;
+        width: 100%;
+        padding: 2% 26%; 
+    }
+    
+    footer p{
+        padding: 0% 0% 2% 28%;
+        color: white;
+        font-size: .9rem;
+        background-color: #3F3B6C;
+        
+    }
+}
+
+.display{
+    transform: translateX(0%);
+}
+
+.toggle1{
+    transform: rotate(45deg) translate(6px, 5px);
+    transition: transform 0.6s;
+}
+
+.toggle2{
+    display: none;
+}
+
+.toggle3{
+    transform: rotate(-45deg);
+}
+
+
+
+
+
